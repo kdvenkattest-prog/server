@@ -11,6 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 
 // ✅ Remove deprecated options from connect
 mongoose.connect(process.env.MONGODB_URI)
