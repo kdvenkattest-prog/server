@@ -3,7 +3,8 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('./User'); // ✅ correct for flat structure
+
 
 // Register
 router.post('/register', async (req, res) => {
