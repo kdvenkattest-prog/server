@@ -1,4 +1,4 @@
-
+key = "jknrgoin30in4noknfknwonwrtoknwrl"
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
